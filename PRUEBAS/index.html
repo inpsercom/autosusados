@@ -1,23 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <title></title>
     <meta charset="utf-8">
+       
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
 
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet">
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/theme.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+  
+    <style>
+        #tabstrip h2 {
+            font-weight: lighter;
+            font-size: 5em;
+            line-height: 1;
+            padding: 0 0 0 30px;
+            margin: 0;
+        }
+
+            #tabstrip h2 span {
+                background: none;
+                padding-left: 5px;
+                font-size: .3em;
+                vertical-align: top;
+            }
+
+        #tabstrip p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+
+
+
+
 
     <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2017.1.118/js/kendo.all.min.js"></script>
+
+    <!--<script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>-->
+
     <script src="app.js"></script>
+    <script src="dataProviders/jsonProvider.js"></script> 
+
 </head>
 
 <body id="kendoUiMobileApp">
     <script src="components/home/index.js"></script>
+    <script src="components/menu/index.js"></script>
+    <script src="components/lector_barras/index.js"></script>
+
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -26,7 +67,7 @@
         </header>
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+                <a href="components/menu/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>

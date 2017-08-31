@@ -1,4 +1,14 @@
-'use strict';
+//'use strict';
+
+
+// Placa
+// Url = "http://186.71.21.170:8089/biss.sherloc/Services/SL/Sherloc/Sherloc.svc/BuscarVH/2,1;;;;;;PCT7242;;JSON;";
+// Chasis
+//   Url = "http://186.71.21.170:8089/biss.sherloc/Services/SL/Sherloc/Sherloc.svc/BuscarVH/2,1;;;;;8LDCB5357A0028110;;;JSON;";
+
+
+// WS Datos del vehiculo
+var wsInfoVehiculo = "http://186.71.21.170:8089/biss.sherloc/Services/SL/Sherloc/Sherloc.svc/BuscarVH/";
 
 (function() {
     var app = {
@@ -23,7 +33,7 @@
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
                 skin: 'nova',
-                initial: 'components/home/view.html'
+                initial: 'components/menu/view.html'
             });
 
             kendo.bind($('.navigation-link-text'), app.navigation.viewModel);
@@ -205,4 +215,5 @@
     localization.set('currentCulture', localization.defaultCulture);
 })(window.app);
 /// end app modules
+
 

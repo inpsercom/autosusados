@@ -1,0 +1,151 @@
+<div data-role="view" data-title="CAPTURA PLACA" data-layout="main" data-model="app.lector_barras" data-show="app.lector_barras.onShow" data-after-show="app.lector_barras.afterShow" id="lector_barrasScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+
+            <span data-role="view-title"></span>
+
+        </div>
+    </header>
+
+    <div class="row">
+        
+        <div class="col">
+            <button class="button" id="capturePhotoButton"><table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><font size="1">Capturar</font></td>
+    </tr>
+    <tr>
+        <td><img src="kendo\styles\images\Capturar.png" alt="Capturar"></td>
+    </tr>
+</table></button>
+        </div>
+        <div class="col">
+
+            
+
+            <button class="button" onclick="getImage()"><table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><font size="1">Seleccionar</font></td>
+    </tr>
+    <tr>
+        <td><img src="kendo\styles\images\Seleccionar.png" alt="Seleccionar"></td>
+    </tr>
+</table></button>
+        </div>
+        <div class="col">
+            <button class="button" id="scanButton"><table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td><font size="1">Lector</font></td>
+    </tr>
+    <tr>
+        <td><img src="kendo\styles\images\Lector.png" alt="Lector"></td>
+    </tr>
+</table></button>
+        </div>
+    </div>
+
+    <div class="row -nopadding">
+        <div class="col -align-center">
+        
+            <table align="center" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        <img style="visibility:hidden; display:none; border:1px solid; margin: 5px auto; max-width: 50%; max-height: 50%;" id="smallImage" src="" /> 
+                        <div class="content" id="result"></div>
+                    
+                    </td>
+                </tr>
+            </table>
+        
+         </div>
+    </div>
+
+        <div class="row">
+            <div class="col">
+                <div id="vehiculo"> </div>
+                <!--<div id="example">-->
+
+
+
+                <div id="example">
+                    <div class="demo-section k-content">
+                        <div id="tabstrip">
+                            <ul>
+                                <li class="k-state-active">
+                                    Datos Vehiculo
+                                </li>
+                                <li>
+                                    Datos Cliente
+                                </li>
+
+                            </ul>
+                            <div>
+                                <div id="datosVEH">
+                                    <div class="demo-section k-content wide">
+                                        <div>
+                                            <form>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                                    <tr>
+                                                        <td><label for="placa">Placa</label></td>
+                                                        <td><input id="placa" data-bind="value: placa" class="k-textbox" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="chasis">VIN</label></td>
+                                                        <td><input id="chasis" data-bind="value: chasis" class="k-textbox" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="codigo_marca">Marca</label></td>
+                                                        <td><input id="codigo_marca" data-bind="value: codigo_marca" class="k-textbox" /></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><label for="mi_modelo">Modelo</label></td>
+                                                        <td><input id="mi_modelo" data-bind="value: mi_modelo" class="k-textbox" /></td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td><label for="anio_modelo">Año</label> </td>
+                                                        <td><input id="anio_modelo" data-bind="value: anio_modelo" class="k-textbox" /></td>
+                                                    </tr>
+                                                    <!--<tr>
+                                                        <td><label for="nombre_color">Color</label></td>
+                                                        <td><input id="nombre_color" data-bind="value: nombre_color" class="k-textbox" /></td>
+                                                    </tr>-->
+                                                    <tr>
+                                                        <td><label for="color_vehiculo">Color</label> </td>
+                                                        <td><input id="color_vehiculo" data-bind="value: color_vehiculo" class="k-textbox" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label for="nombre_propietario">Propietario</label> </td>
+                                                        <td><input id="nombre_propietario" data-bind="value: nombre_propietario" class="k-textbox" /></td>
+                                                    </tr>
+
+                                                </table>
+
+                                            </form>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div>
+                               
+                                    <p>datos del cliente</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+
